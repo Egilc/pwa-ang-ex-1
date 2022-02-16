@@ -14,10 +14,12 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ZonesComponent } from './components/zones/zones.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ZonesComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +35,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    HttpClientModule, 
+    MatNativeDateModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
