@@ -14,10 +14,16 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AComponent } from './components/a/a.component';
+import { BComponent } from './components/b/b.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AComponent,
+    BComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    AppRoutingModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
